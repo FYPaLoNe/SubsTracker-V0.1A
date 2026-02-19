@@ -1,7 +1,12 @@
-# SubsTracker-V0.1A
-Repository Description  Subscription Tracker – User Subscription Management with Flask  This project is a simple web application for tracking user subscriptions. Users can register, log in, and manage their subscriptions. Both monthly and yearly subscriptions are supported, and the total monthly cost is automatically calculated.
+# Subscription Tracker V0.1A – User Subscription Management with Flask
 
-If you have Pycharm you can try this.
+This is a simple web application built with Flask for tracking user subscriptions. Users can:
 
-I try few way to publish it but icant do it.
-I dont have money for buy a domain. :(
+- Register and log in
+- Add, view, and delete subscriptions
+- Support for both monthly and yearly subscriptions
+- Automatic calculation of total monthly cost
+
+💡 If you have PyCharm, you can try running it locally.
+
+⚠️ I tried several ways to publish it online, but couldn't get it fully running. I don't have money to buy a domain yet. 
