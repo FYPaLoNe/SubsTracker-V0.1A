@@ -10,3 +10,5 @@ This is a simple web application built with Flask for tracking user subscription
 💡 If you have PyCharm, you can try running it locally.
 
 ⚠️ I tried several ways to publish it online, but couldn't get it fully running. I don't have money to buy a domain yet. 
+
+- (This project not created by only me. We work witch ChatGPT)
