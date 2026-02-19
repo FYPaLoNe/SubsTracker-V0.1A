@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #020617;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+input, select {
+    background: #020617;
+    color: white;
+    border: 1px solid #334155;
+}
+
+button {
+    background: #6366f1;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #4f46e5;
+}
+
+.total {
+    color: #22c55e;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    background: #020617;
+    padding: 14px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.delete {
+    color: #ef4444;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #020617;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.logout {
+    color: #ef4444;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout:hover {
+    text-decoration: underline;
+}

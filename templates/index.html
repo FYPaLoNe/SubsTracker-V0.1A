@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Subs Follow</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <span>👋 Hoş geldin, {{ session["user"] }}</span>
+        <a href="/logout" class="logout">Çıkış</a>
+    </div>
+    <h1>💳 Subs Follow</h1>
+    <p class="subtitle">Paran nereye gidiyor, görelim.</p>
+
+    <form action="/add" method="post" class="card">
+        <input type="text" name="name" placeholder="Abonelik adı" required>
+        <input type="number" step="0.01" name="price" placeholder="Ücret (₺)" required>
+
+        <select name="type">
+            <option value="monthly">Aylık</option>
+            <option value="yearly">Yıllık</option>
+        </select>
+
+        <button type="submit">➕ Ekle</button>
+    </form>
+
+    <h2>Aylık Toplam: <span class="total">{{ total }} ₺</span></h2>
+
+    <ul class="list">
+        {% for sub in subs %}
+        <li>
+            <div>
+                <strong>{{ sub.name }}</strong>
+                <small>
+                    {{ sub.price }} ₺ /
+                    {{ "ay" if sub.type == "monthly" else "yıl" }}
+                </small>
+            </div>
+            <a class="delete" href="/delete/{{ loop.index0 }}">✖</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+</body>
+</html>

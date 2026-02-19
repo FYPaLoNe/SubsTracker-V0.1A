@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 Kayıt Ol</h1>
+
+    <form method="post" class="card">
+        <input type="text" name="username" placeholder="Kullanıcı adı" required>
+        <input type="password" name="password" placeholder="Şifre" required>
+        <button type="submit">Kayıt Ol</button>
+    </form>
+
+    <p style="text-align:center">
+        <a href="/login">Geri dön</a>
+    </p>
+</div>
+
+</body>
+</html>
